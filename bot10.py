@@ -15,25 +15,25 @@ def hola(mensaje):
     print("Mandaron info")
 
 @bot.message_handler(commands=['1','GB']) 
-def Metros(mensaje):
+def GB(mensaje):
     bot.send_chat_action(id, 'typing')
     bot.send_message(id, "multiplica el valor de tamaño de datos por 1024")
     print("Mandaron 1")
 
-@bot.message_handler(commands=['2','TB '])
-def Kilómetros(mensaje):
+@bot.message_handler(commands=['2','TB'])
+def TB(mensaje):
     bot.send_chat_action(id, 'typing')
     bot.send_message(id, "multiplica el valor de tamaño de datos por 1024")
     print("Mandaron 2")
 
-@bot.message_handler(commands=['3','MB '])
-def Millas(mensaje):
+@bot.message_handler(commands=['3','MB'])
+def MB(mensaje):
     bot.send_chat_action(id, 'typing')
     bot.send_message(id, "multiplica el valor de tamaño de datos por 1024")
     print("Mandaron 3")
 
-@bot.message_handler(commands=['4','b '])
-def Pie(mensaje):
+@bot.message_handler(commands=['4','b'])
+def b(mensaje):
     bot.send_chat_action(id, 'typing')
     bot.send_message(id, "multiplica el valor de tamaño de datos por 8")
     print("Mandaron 4")
